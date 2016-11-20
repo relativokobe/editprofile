@@ -1,0 +1,206 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.editprofilepract3.BasicInfo"
+    android:background="?attr/colorButtonNormal">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:layout_width="50dp"
+        app:srcCompat="@drawable/ice"
+        android:id="@+id/imageView2"
+        android:layout_height="100dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.2" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="56dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/placeholder"
+        android:id="@+id/imageView3"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="56dp"
+        app:layout_constraintHorizontal_bias="0.33" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/cake"
+        android:id="@+id/imageView4"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="Birth Date"
+        android:id="@+id/editText4"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="56dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView4"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.19"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/pon"
+        android:id="@+id/imageView5"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Contact No."
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="56dp"
+        app:layout_constraintHorizontal_bias="0.14" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/baby"
+        android:id="@+id/imageView7"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Age"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="56dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView7"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.14"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/sex1"
+        android:id="@+id/imageView8"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <RadioButton
+        android:text="Male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView8"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <RadioButton
+        android:text="Female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        android:layout_marginEnd="208dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="208dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView8"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
