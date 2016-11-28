@@ -25,22 +25,61 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
+        getSupportActionBar().show();
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        setupViewPager(viewPager);
+        //setupViewPager(viewPager);
         TabLayout tas = (TabLayout) findViewById(tabs);
         tas.addTab(tas.newTab().setText("General"));
-        tas.addTab(tas.newTab().setText("Personal"));
-        tas.addTab(tas.newTab().setText("Skills"));
-
+        tas.addTab(tas.newTab().setText("Basic Info"));
+        tas.addTab(tas.newTab().setText("Essentials"));
         tas.setupWithViewPager(viewPager);
+
+        FragmentManager fm = getSupportFragmentManager();
+        fm.beginTransaction().replace(R.id.menu_frame,new GeneralFragment()).commit();//Para una magpakita ang GeneralFragment
+
+        tas.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                FragmentManager fm = getSupportFragmentManager();
+                if(tab.getPosition() == 0){
+                    fm.beginTransaction().replace(R.id.menu_frame,new GeneralFragment()).commit();
+                }
+                else if(tab.getPosition() == 1){
+                    fm.beginTransaction().replace(R.id.menu_frame,new BasicInfo()).commit();
+                }
+                else if(tab.getPosition() == 2){
+                    fm.beginTransaction().replace(R.id.menu_frame,new Skills()).commit();
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+                FragmentManager fm = getSupportFragmentManager();
+                if(tab.getPosition() == 0){
+                    fm.beginTransaction().replace(R.id.menu_frame,new GeneralFragment()).commit();
+                }
+                else if(tab.getPosition() == 1){
+                    fm.beginTransaction().replace(R.id.menu_frame,new BasicInfo()).commit();
+                }
+                else if(tab.getPosition() == 2){
+                    fm.beginTransaction().replace(R.id.menu_frame,new Skills()).commit();
+                }
+            }
+        });
     }
 
     private void setupViewPager(ViewPager viewPager) {
         // Adapter adapter = new Adapter(getSupportFragmentManager());
+
         Adapter adapter = new Adapter(getSupportFragmentManager());
         adapter.addFragment(new GeneralFragment(), "General");
-        adapter.addFragment(new BasicInfo(), "Personal");
-        adapter.addFragment(new Skills(), "Skills");
+        adapter.addFragment(new BasicInfo(), "Basic Info");
+        adapter.addFragment(new Skills(), "Essentials");
 
         viewPager.setAdapter(adapter);
 

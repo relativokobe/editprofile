@@ -1,9 +1,183 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.asus.editprofilepract3.Skills">
+    android:layout_height="fill_parent"
+    tools:context="com.example.asus.editprofilepract3.Skills"
+    android:background="?attr/colorButtonNormal">
 
     <!-- TODO: Update blank fragment layout -->
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:layout_height="650dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="128dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:radius="11dp"
+
+            android:background="@drawable/shape"
+            android:elevation="9dp"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textStyle="normal|bold"
+                android:text="SCHOOL"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="University Of San Jose-Recoletos"
+                android:ems="10"
+                android:id="@+id/editText11"
+                android:gravity="center"
+                android:backgroundTint="@android:color/holo_red_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="156dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dp"
+            android:radius="11dp"
+            android:elevation="10dp"
+            android:id="@+id/linearLayout2">
+
+            <TextView
+                android:text="OCCUPATION"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textStyle="normal|bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Physical Therapist "
+                android:ems="10"
+                android:id="@+id/editText12"
+                android:gravity="center"
+                android:backgroundTint="@android:color/holo_red_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText13"
+                android:hint="Add more"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:elevation="10dp"
+            android:background="@drawable/shape"
+            android:layout_height="280dp"
+            android:radius="11dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/textView4"
+                android:textStyle="normal|bold"
+                android:text="SKILLS AND HOBBIES"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Basketball"
+                android:ems="10"
+                android:id="@+id/editText14"
+                android:gravity="center"
+                android:backgroundTint="@android:color/holo_red_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Cooking"
+                android:ems="10"
+                android:id="@+id/editText15"
+                android:gravity="center"
+                android:backgroundTint="@android:color/holo_red_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Planting"
+                android:ems="10"
+                android:id="@+id/editText16"
+                android:gravity="center"
+                android:backgroundTint="@android:color/holo_red_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Reading"
+                android:ems="10"
+                android:id="@+id/editText17"
+                android:gravity="center"
+                android:backgroundTint="@android:color/holo_red_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="Add more"
+                android:gravity="center"
+                android:id="@+id/editText18" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+</RelativeLayout>
