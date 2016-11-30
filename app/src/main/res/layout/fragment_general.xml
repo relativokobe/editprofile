@@ -13,7 +13,7 @@
         android:background="@android:color/white"
         android:fillViewport="true"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
@@ -62,20 +62,9 @@
            android:layout_below="@+id/relativeLayout"
            android:layout_alignLeft="@+id/relativeLayout"
            android:layout_alignStart="@+id/relativeLayout"
-           android:layout_width="320dp">
-
-           <EditText
-               android:layout_height="wrap_content"
-               android:inputType="textPersonName"
-               android:text="University of San Jose - Recoletos"
-               android:ems="10"
-               android:backgroundTint="#D3D3D3"
-               android:id="@+id/editText30"
-               android:layout_width="260dp"
-               android:layout_alignParentBottom="true"
-               android:layout_alignParentRight="true"
-               android:layout_alignParentEnd="true"
-               android:textSize="15sp" />
+           android:layout_width="match_parent"
+           android:layout_marginLeft="1dp"
+           android:layout_marginRight="10dp">
 
            <ImageView
                android:layout_width="50dp"
@@ -93,6 +82,9 @@
                android:text="EDUCATION"
                android:background="#fafafa"
                android:ems="10"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
                android:textStyle="bold"
                android:textSize="15sp"
                android:id="@+id/editText29"
@@ -100,6 +92,33 @@
                android:layout_alignParentTop="true"
                android:layout_alignParentLeft="true"
                android:layout_alignParentStart="true" />
+
+           <ImageView
+               android:layout_width="40dp"
+               app:srcCompat="@drawable/ic_edit_1"
+               android:id="@+id/pen2"
+               android:layout_height="30dp"
+               android:layout_alignBottom="@+id/editText29"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginBottom="9dp" />
+
+           <EditText
+               android:layout_height="wrap_content"
+               android:inputType="textPersonName"
+               android:text="University of San Jose - Recoletos"
+               android:ems="10"
+               android:backgroundTint="#D3D3D3"
+               android:id="@+id/editText30"
+               android:layout_width="280dp"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
+               android:textSize="15sp"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true" />
        </RelativeLayout>
 
        <RelativeLayout
@@ -111,10 +130,12 @@
 
            android:id="@+id/relativeLayout"
            android:layout_marginTop="22dp"
-           android:layout_width="320dp"
+           android:layout_width="match_parent"
            android:layout_below="@+id/text"
            android:layout_centerHorizontal="true"
-           android:layout_height="365dp">
+           android:layout_height="365dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp">
 
            <EditText
                android:layout_width="wrap_content"
@@ -125,6 +146,10 @@
                android:textColor="#D3D3D3"
                android:ems="10"
                android:textStyle="bold"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
                android:id="@+id/editText22"
                android:layout_below="@+id/editText20"
                android:layout_alignParentRight="true"
@@ -137,6 +162,10 @@
                android:textStyle="bold"
                android:inputType="textPersonName"
                android:text="Guadalupe Cebu"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
                android:ems="10"
                android:textColor="#D3D3D3"
                android:backgroundTint="#D3D3D3"
@@ -172,6 +201,10 @@
                android:inputType="textPersonName"
                android:text="Kobe "
                android:textStyle="bold"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
                android:ems="10"
                android:textColor="#D3D3D3"
                android:gravity="right"
@@ -298,6 +331,10 @@
                android:inputType="textPersonName"
                android:text="Relativo"
                android:ems="10"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
                android:textStyle="bold"
                android:textColor="#D3D3D3"
                android:gravity="right"
@@ -318,6 +355,10 @@
                android:id="@+id/editText28"
                android:gravity="right"
                android:textStyle="bold"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
                android:layout_alignParentBottom="true"
                android:layout_alignParentRight="true"
                android:layout_alignParentEnd="true" />
@@ -328,6 +369,10 @@
                android:inputType="textPersonName"
                android:text="July 29, 1997"
                android:ems="10"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
                android:gravity="right"
                android:backgroundTint="#D3D3D3"
                android:textColor="#D3D3D3"
@@ -339,7 +384,7 @@
                android:layout_alignParentEnd="true" />
 
            <EditText
-               android:layout_width="match_parent"
+               android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:inputType="textPersonName"
                android:text="Gender"
@@ -353,29 +398,58 @@
                android:layout_alignParentLeft="true"
                android:layout_alignParentStart="true" />
 
-           <RadioButton
-               android:text="Female"
+
+
+
+
+           <RadioGroup
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:id="@+id/radioButton4"
-
-               android:layout_alignBaseline="@+id/radioButton3"
-               android:layout_alignBottom="@+id/radioButton3"
+               android:layout_alignParentBottom="true"
                android:layout_alignParentRight="true"
-               android:layout_alignParentEnd="true" />
+               android:layout_alignParentEnd="true"
+               android:layout_marginRight="40dp"
+               android:layout_marginEnd="40dp"
+               android:layout_marginBottom="97dp"
+               android:id="@+id/radioGroup"><![CDATA[
 
-           <RadioButton
-               android:text="Male"
+
+
+               />
+
+           ]]></RadioGroup>
+
+
+
+           <ImageView
+               android:layout_width="40dp"
+               app:srcCompat="@drawable/ic_edit_1"
+               android:id="@+id/pen1"
+               android:layout_height="30dp"
+               android:layout_above="@+id/editText10"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginBottom="10dp" />
+
+           <EditText
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:id="@+id/radioButton3"
-               android:layout_marginRight="14dp"
-               android:layout_marginEnd="14dp"
-               android:checked="true"
+               android:inputType="textPersonName"
+               android:text="Male"
+               android:ems="10"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
+
+               android:textColor="#D3D3D3"
+               android:backgroundTint="#D3D3D3"
+               android:gravity="right"
+               android:id="@+id/editText"
                android:layout_alignBaseline="@+id/editText34"
                android:layout_alignBottom="@+id/editText34"
-               android:layout_toLeftOf="@+id/radioButton4"
-               android:layout_toStartOf="@+id/radioButton4" />
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true" />
 
        </RelativeLayout>
 
@@ -389,7 +463,10 @@
            android:layout_alignStart="@+id/lastrel"
            android:layout_alignRight="@+id/lastrel"
            android:layout_alignEnd="@+id/lastrel"
-           android:layout_height="330dp">
+           android:layout_height="330dp"
+           android:layout_marginRight="2dp"
+           android:layout_marginLeft="1dp">
+
 
            <EditText
                android:layout_width="match_parent"
@@ -399,145 +476,58 @@
                android:ems="10"
                android:textSize="15sp"
                android:textStyle="bold"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
                android:background="#fafafa"
                android:backgroundTint="#D3D3D3"
                android:id="@+id/editText33"
                android:layout_alignParentLeft="true"
                android:layout_alignParentStart="true" />
 
-           <CheckBox
-               android:text="Medical"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_below="@+id/editText33"
-               android:layout_alignParentLeft="true"
-               android:layout_alignParentStart="true"
-               android:layout_marginLeft="11dp"
-               android:layout_marginStart="11dp"
-               android:layout_marginTop="11dp"
-               android:id="@+id/checkBox" />
+           <ImageView
+               android:layout_width="40dp"
+               app:srcCompat="@drawable/ic_edit_1"
+               android:id="@+id/pen4"
+               android:layout_height="30dp"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true" />
 
-           <CheckBox
+           <TextView
                android:text="Sports"
                android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/checkBox2"
-               android:layout_marginTop="6dp"
-               android:layout_below="@+id/checkBox"
-               android:layout_alignLeft="@+id/checkBox"
-               android:layout_alignStart="@+id/checkBox" />
+               android:layout_height="40dp"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_marginLeft="25dp"
+               android:layout_marginStart="25dp"
+               android:layout_marginBottom="248dp"
+               android:id="@+id/textView2"
+               android:textSize="20sp" />
 
-           <CheckBox
-               android:text="Entertainment"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/checkBox3"
-               android:layout_marginTop="6dp"
-               android:layout_below="@+id/checkBox2"
-               android:layout_alignLeft="@+id/checkBox2"
-               android:layout_alignStart="@+id/checkBox2" />
-
-           <CheckBox
-               android:text="Environmental"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/checkBox4"
-               android:layout_below="@+id/checkBox3"
-               android:layout_alignLeft="@+id/checkBox3"
-               android:layout_alignStart="@+id/checkBox3"
-               android:layout_marginTop="9dp" />
-
-           <CheckBox
-               android:text="Culinary"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginTop="8dp"
-               android:id="@+id/checkBox5"
-               android:layout_below="@+id/checkBox4"
-               android:layout_alignLeft="@+id/checkBox4"
-               android:layout_alignStart="@+id/checkBox4" />
-
-           <CheckBox
+           <TextView
                android:text="Arts"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:id="@+id/checkBox6"
-               android:layout_below="@+id/checkBox5"
-               android:layout_alignLeft="@+id/checkBox5"
-               android:layout_alignStart="@+id/checkBox5"
-               android:layout_marginTop="10dp" />
+               android:id="@+id/textView3"
+               android:textSize="20sp"
+               android:layout_alignTop="@+id/textView2"
+               android:layout_alignLeft="@+id/textView2"
+               android:layout_alignStart="@+id/textView2"
+               android:layout_marginTop="40dp" />
 
-           <CheckBox
-               android:text="Educational"
+           <TextView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:id="@+id/checkBox7"
-               android:layout_alignBaseline="@+id/checkBox"
-               android:layout_alignBottom="@+id/checkBox"
-               android:layout_toRightOf="@+id/checkBox4"
-               android:layout_toEndOf="@+id/checkBox4"
-               android:layout_marginLeft="31dp"
-               android:layout_marginStart="31dp" />
-
-           <CheckBox
-               android:text="Embroidery"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/checkBox8"
-               android:layout_above="@+id/checkBox3"
-               android:layout_alignLeft="@+id/checkBox7"
-               android:layout_alignStart="@+id/checkBox7" />
-
-           <CheckBox
-               android:text="Athletics"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/checkBox9"
-               android:layout_above="@+id/checkBox4"
-               android:layout_alignLeft="@+id/checkBox8"
-               android:layout_alignStart="@+id/checkBox8" />
-
-           <CheckBox
-               android:text="Books and Poetry"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/checkBox10"
-               android:layout_alignBaseline="@+id/checkBox4"
-               android:layout_alignBottom="@+id/checkBox4"
-               android:layout_alignLeft="@+id/checkBox9"
-               android:layout_alignStart="@+id/checkBox9" />
-
-           <CheckBox
-               android:text="Techy"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/checkBox11"
-               android:layout_alignBaseline="@+id/checkBox5"
-               android:layout_alignBottom="@+id/checkBox5"
-               android:layout_alignLeft="@+id/checkBox10"
-               android:layout_alignStart="@+id/checkBox10" />
-
-           <CheckBox
-               android:text="Adventure"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/checkBox12"
-               android:layout_alignBaseline="@+id/checkBox6"
-               android:layout_alignBottom="@+id/checkBox6"
-               android:layout_alignLeft="@+id/checkBox11"
-               android:layout_alignStart="@+id/checkBox11" />
-
-           <EditText
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="textPersonName"
-               android:ems="10"
-               android:id="@+id/editText36"
-               android:layout_alignParentBottom="true"
-               android:layout_alignRight="@+id/checkBox11"
-               android:layout_alignEnd="@+id/checkBox11"
-               android:hint="Add more"
-               android:backgroundTint="#D3D3D3" />
+               android:text="Culinary"
+               android:layout_marginTop="18dp"
+               android:textSize="20sp"
+               android:id="@+id/textView4"
+               android:layout_below="@+id/textView3"
+               android:layout_alignLeft="@+id/textView3"
+               android:layout_alignStart="@+id/textView3" />
 
        </RelativeLayout>
 
@@ -546,11 +536,14 @@
            android:background="@drawable/shape"
            android:layout_height="100dp"
            android:elevation="5dp"
-           android:layout_width="320dp"
+           android:layout_width="match_parent"
            android:layout_marginTop="16dp"
            android:layout_below="@+id/usjr"
            android:layout_alignLeft="@+id/usjr"
-           android:layout_alignStart="@+id/usjr">
+           android:layout_alignStart="@+id/usjr"
+           android:layout_marginLeft="1dp"
+           android:layout_marginRight="10dp">
+
 
            <EditText
                android:layout_width="145dp"
@@ -559,6 +552,10 @@
                android:text="Physical Therapist"
                android:ems="10"
                android:hint="Occupation"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
                android:textSize="15sp"
                android:id="@+id/editText32"
                android:layout_alignParentBottom="true"
@@ -573,6 +570,9 @@
                android:textSize="15sp"
                android:background="#fafafa"
                android:backgroundTint="#D3D3D3"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
                android:ems="10"
                android:id="@+id/editText31"
                android:textStyle="normal|bold"
@@ -587,6 +587,10 @@
                android:hint="where do you work"
                android:textSize="15sp"
                android:id="@+id/editText9"
+               android:clickable="false"
+               android:cursorVisible="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
                android:layout_alignParentBottom="true"
                android:layout_alignParentLeft="true"
                android:layout_alignParentStart="true" />
@@ -600,6 +604,16 @@
                android:layout_alignTop="@+id/editText9"
                android:layout_centerHorizontal="true"
                android:id="@+id/textView" />
+
+           <ImageView
+               android:layout_width="40dp"
+               app:srcCompat="@drawable/ic_edit_1"
+               android:id="@+id/pen3"
+               android:layout_height="30dp"
+               android:layout_marginBottom="8dp"
+               android:layout_alignBottom="@+id/editText31"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true" />
        </RelativeLayout>
 
 
