@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     tools:context="com.example.asus.editprofilepract3.Skills"
-    android:background="?attr/colorButtonNormal">
+    android:background="@android:color/background_light">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -36,7 +36,7 @@
             android:radius="11dp"
 
             android:background="@drawable/shape"
-            android:elevation="9dp"
+            android:elevation="2dp"
             android:id="@+id/linearLayout">
 
             <TextView
@@ -45,7 +45,8 @@
                 android:gravity="center"
                 android:textStyle="normal|bold"
                 android:text="SCHOOL"
-                android:layout_height="40dp" />
+                android:layout_height="40dp"
+                android:background="?android:attr/colorControlHighlight" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -55,7 +56,7 @@
                 android:ems="10"
                 android:id="@+id/editText11"
                 android:gravity="center"
-                android:backgroundTint="@android:color/holo_red_light" />
+                android:backgroundTint="#D3D3D3" />
         </LinearLayout>
 
         <LinearLayout
@@ -72,7 +73,7 @@
             android:layout_marginLeft="16dp"
             android:layout_width="0dp"
             android:radius="11dp"
-            android:elevation="10dp"
+            android:elevation="2dp"
             android:id="@+id/linearLayout2">
 
             <TextView
@@ -82,7 +83,7 @@
                 android:id="@+id/textView3"
                 android:gravity="center"
                 android:textStyle="normal|bold"
-                />
+                android:background="?android:attr/colorControlHighlight" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -92,7 +93,7 @@
                 android:ems="10"
                 android:id="@+id/editText12"
                 android:gravity="center"
-                android:backgroundTint="@android:color/holo_red_light" />
+                android:backgroundTint="#D3D3D3" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -101,7 +102,8 @@
                 android:ems="10"
                 android:id="@+id/editText13"
                 android:hint="Add more"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:backgroundTint="#D3D3D3" />
         </LinearLayout>
 
         <LinearLayout
@@ -115,7 +117,7 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginRight="16dp"
-            android:elevation="10dp"
+            android:elevation="2dp"
             android:background="@drawable/shape"
             android:layout_height="280dp"
             android:radius="11dp">
@@ -126,7 +128,8 @@
                 android:id="@+id/textView4"
                 android:textStyle="normal|bold"
                 android:text="SKILLS AND HOBBIES"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:background="?attr/colorControlHighlight" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -136,7 +139,7 @@
                 android:ems="10"
                 android:id="@+id/editText14"
                 android:gravity="center"
-                android:backgroundTint="@android:color/holo_red_light" />
+                android:backgroundTint="#D3D3D3" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -146,7 +149,7 @@
                 android:ems="10"
                 android:id="@+id/editText15"
                 android:gravity="center"
-                android:backgroundTint="@android:color/holo_red_light" />
+                android:backgroundTint="#D3D3D3" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -156,7 +159,7 @@
                 android:ems="10"
                 android:id="@+id/editText16"
                 android:gravity="center"
-                android:backgroundTint="@android:color/holo_red_light" />
+                android:backgroundTint="#D3D3D3" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -166,7 +169,7 @@
                 android:ems="10"
                 android:id="@+id/editText17"
                 android:gravity="center"
-                android:backgroundTint="@android:color/holo_red_light" />
+                android:backgroundTint="#D3D3D3" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -175,7 +178,8 @@
                 android:ems="10"
                 android:hint="Add more"
                 android:gravity="center"
-                android:id="@+id/editText18" />
+                android:id="@+id/editText18"
+                android:backgroundTint="#D3D3D3" />
         </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>

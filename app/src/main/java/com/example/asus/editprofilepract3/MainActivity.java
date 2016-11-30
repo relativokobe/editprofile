@@ -13,7 +13,7 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.asus.editprofilepract3.R.id.tabs;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,16 +28,16 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().show();
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         //setupViewPager(viewPager);
-        TabLayout tas = (TabLayout) findViewById(tabs);
+        /*TabLayout tas = (TabLayout) findViewById(tabs);
         tas.addTab(tas.newTab().setText("General"));
         tas.addTab(tas.newTab().setText("Basic Info"));
-        tas.addTab(tas.newTab().setText("Essentials"));
-        tas.setupWithViewPager(viewPager);
+        tas.addTab(tas.newTab().setText("Essentials"));*/
+      //  tas.setupWithViewPager(viewPager);
 
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.menu_frame,new GeneralFragment()).commit();//Para una magpakita ang GeneralFragment
 
-        tas.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+       /* tas.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 FragmentManager fm = getSupportFragmentManager();
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     fm.beginTransaction().replace(R.id.menu_frame,new Skills()).commit();
                 }
             }
-        });
+        });*/
     }
 
     private void setupViewPager(ViewPager viewPager) {
