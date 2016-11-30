@@ -33,13 +33,7 @@
                     android:orientation="horizontal"
                     android:weightSum="5">
 
-                <ImageView
-                    android:layout_width="5dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="left"
-                    android:src="@drawable/ex"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ex" />
+
 
                 <TextView
                     android:layout_width="50sp"
@@ -51,17 +45,9 @@
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
-                <ImageView
-                    android:layout_width="5dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/check"
-                    android:layout_weight="1"
-                    />
+
 
                 </LinearLayout>
-
-
 
                 </android.support.v7.widget.Toolbar>
 
